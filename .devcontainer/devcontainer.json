@@ -1,8 +1,8 @@
 {
-  "name": "License API Zero-Cost",
+  "name": "License API",
   "dockerFile": "../Dockerfile",
   "forwardPorts": [3000],
-  "postCreateCommand": "npm install && npm start",
+  "postCreateCommand": "cd /workspaces/LocalSourceDownloader && npm install && npm start",
   "remoteUser": "node",
   "portsAttributes": {
     "3000": {
