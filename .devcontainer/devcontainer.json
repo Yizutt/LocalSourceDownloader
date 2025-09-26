@@ -1,0 +1,13 @@
+{
+  "name": "License API Zero-Cost",
+  "dockerFile": "../Dockerfile",
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm install && npm start",
+  "remoteUser": "node",
+  "portsAttributes": {
+    "3000": {
+      "label": "License API",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
